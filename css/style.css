@@ -5,7 +5,10 @@ html, body {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #222;
+  scroll-behavior: smooth;
 }
+
+
 /* Navigation */
 .navbar {
   padding: .8rem;
@@ -120,8 +123,19 @@ hr.light {
 }
 
 /* Arrow To Top Button */
-.fa-arrow-to-top {
-  color: #6648b1;
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #27ae60;
+  border-radius: 5px;
+  bottom: 40px;
+  right: 40px;
+  text-decoration: none;
+  text-align: center;
+  light-height: 50px;
+  color: white;
+  font-size: 22px;
 }
 
 /* Purple Buttons */

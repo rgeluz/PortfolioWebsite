@@ -18,9 +18,35 @@ EMAIL: geluzr@uci.edu
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+  <script src="https://use.fontawesome.com/releases/v5.11.1/js/all.js"></script>
   <link href="./css/style.css" rel="stylesheet">
   <title>RomanGeluz | About</title>
+
+  <!-- Scroll to top button visible only when scrolled down -->
+  <!-- https://forum.webflow.com/t/scroll-to-top-button-visible-only-when-scrolled-down/3807 -->
+  <script>
+    $(document).ready(function () {
+      var elmClass = '.gotopbtn'; // Adjust this accordingly.
+
+      //Check to see if the window is top if not then display button
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) { // 300px from top
+          $(elmClass).fadeIn();
+        } else {
+          $(elmClass).fadeOut();
+        }
+      });
+
+      //Click event to scroll to top
+      $(elmClass).click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+      });
+
+    });
+  </script>
+
 </head>
 <body>
   <!--
@@ -68,7 +94,7 @@ EMAIL: geluzr@uci.edu
           <h1 class="page-title">About</h1>
           <p>
             I am currently a Senior at the University of California, Irvine and I am majoring in Software Engineering.
-            When I am not in school, I reside in San Diego, California. San Diego is know for it mild year-round climate, sunny beaches,
+            When I am not in school, I reside in San Diego, California. San Diego is known for it mild year-round climate, sunny beaches,
              one of the best craft beer industries in the nation, and friendly and down-to-earth people.
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum nec ligula eget luctus. Phasellus ultrices justo et egestas dictum. Nullam ut dapibus elit. Mauris eget tristique metus. Donec porta nunc a posuere laoreet. Curabitur mattis risus sed nulla sollicitudin tempus. Aliquam a porttitor neque. Aenean mattis eget nibh vel ornare. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris ultrices mauris sit amet eros consequat, non bibendum tortor ultricies. Aenean felis neque, volutpat quis faucibus at, convallis sagittis risus. Etiam quis dolor diam.
           </p>
@@ -129,6 +155,9 @@ EMAIL: geluzr@uci.edu
   		</div>
   	</div>
   </footer>
+
+  <!-- go to top button -->
+  <a class="gotopbtn" href="#"><i class="fas fa-chevron-up"></i></a>
 
 </body>
 </html>

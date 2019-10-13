@@ -18,9 +18,34 @@ EMAIL: geluzr@uci.edu
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+  <script src="https://use.fontawesome.com/releases/v5.11.1/js/all.js"></script>
   <link href="./css/style.css" rel="stylesheet">
   <title>RomanGeluz | Home</title>
+
+  <!-- Scroll to top button visible only when scrolled down -->
+  <!-- https://forum.webflow.com/t/scroll-to-top-button-visible-only-when-scrolled-down/3807 -->
+  <script>
+    $(document).ready(function () {
+      var elmClass = '.gotopbtn'; // Adjust this accordingly.
+
+      //Check to see if the window is top if not then display button
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) { // 300px from top
+          $(elmClass).fadeIn();
+        } else {
+          $(elmClass).fadeOut();
+        }
+      });
+
+      //Click event to scroll to top
+      $(elmClass).click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+      });
+
+    });
+  </script>
 </head>
 <body>
   <!--
@@ -32,7 +57,8 @@ EMAIL: geluzr@uci.edu
   -->
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+  <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <!-- <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top"> -->
   	<div class="container-fluid">
   		<a class="navbar-brand" href="#"><img src="img/logo_placeholder.png"></a>
   		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
@@ -115,18 +141,7 @@ EMAIL: geluzr@uci.edu
     <div class="container-fluid padding">
     	<div class="row padding">
 
-    		<div class="col-md-4">
-    			<div class="card">
-    				<img class="card-img-top" src="img/FamilyMonitorApp_Inf121.png" alt="School Projects">
-    				<div class="card-body">
-    					<h4 class="card-title">School Projects</h4>
-    					<p class="card-text">Click here to see some of the school projects I have completed.</p>
-    					<a href="schoolprojects.html" class="btn btn-outline-secondary">Learn More</a>
-    				</div>
-    			</div>
-    		</div>
-
-    		<div class="col-md-4">
+        <div class="col-md-4">
     			<div class="card">
     				<img class="card-img-top" src="img/UCI_logo.png" alt="UCI Logo">
     				<div class="card-body">
@@ -135,6 +150,17 @@ EMAIL: geluzr@uci.edu
                 These include computer science, informatics and mathematics courses.
               </p>
     					<a href="courses.html" class="btn btn-outline-secondary">Learn More</a>
+    				</div>
+    			</div>
+    		</div>
+
+    		<div class="col-md-4">
+    			<div class="card">
+    				<img class="card-img-top" src="img/FamilyMonitorApp_Inf121.png" alt="School Projects">
+    				<div class="card-body">
+    					<h4 class="card-title">School Projects</h4>
+    					<p class="card-text">Click here to see some of the school projects I have completed.</p>
+    					<a href="schoolprojects.html" class="btn btn-outline-secondary">Learn More</a>
     				</div>
     			</div>
     		</div>
@@ -197,6 +223,10 @@ EMAIL: geluzr@uci.edu
   		</div>
   	</div>
   </footer>
+
+  <!-- go to top button -->
+  <!-- <a class="gotopbtn" href="#"><i class="fas fa-arrow-up"></i></a> -->
+  <a class="gotopbtn" href="#"><i class="fas fa-chevron-up"></i></a>
 
 </body>
 </html>

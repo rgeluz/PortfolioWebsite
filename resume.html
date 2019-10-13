@@ -18,9 +18,35 @@ EMAIL: geluzr@uci.edu
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+  <script src="https://use.fontawesome.com/releases/v5.11.1/js/all.js"></script>
   <link href="./css/style.css" rel="stylesheet">
   <title>RomanGeluz | Resume</title>
+
+  <!-- Scroll to top button visible only when scrolled down -->
+  <!-- https://forum.webflow.com/t/scroll-to-top-button-visible-only-when-scrolled-down/3807 -->
+  <script>
+    $(document).ready(function () {
+      var elmClass = '.gotopbtn'; // Adjust this accordingly.
+
+      //Check to see if the window is top if not then display button
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) { // 300px from top
+          $(elmClass).fadeIn();
+        } else {
+          $(elmClass).fadeOut();
+        }
+      });
+
+      //Click event to scroll to top
+      $(elmClass).click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+      });
+
+    });
+  </script>
+
 </head>
 <body>
   <!--
@@ -121,6 +147,9 @@ EMAIL: geluzr@uci.edu
   		</div>
   	</div>
   </footer>
+
+  <!-- go to top button -->
+  <a class="gotopbtn" href="#"><i class="fas fa-chevron-up"></i></a>
 
 </body>
 </html>
