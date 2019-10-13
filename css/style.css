@@ -66,12 +66,16 @@ html, body {
   margin-top: .3rem;
   margin-top: 1rem;
 }
-
+#UCI_logo {
+  width: 75%;
+  height: 75%;
+  position: relative;
+}
 
 /* Connect */
 .social a {
-  font-size: 4.5em;
-  padding: 3rem;
+  font-size: 3em;
+  padding: 2rem;
 }
 
 .fa-linkedin {
@@ -119,21 +123,20 @@ hr.light {
   margin-bottom: 1rem;
 }
 
-/* About */
-.dark{
-  padding:15px;
-  background: #35424a;
-  color: #ffffff;
-  margin-top:10px;
-  magin-bottom:10px;
+/* Purple Buttons */
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #6648b1;
 }
-
-
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .social a {
-    font-size: 4em;
+    font-size: 3em;
     padding: 2em;
   }
 }
