@@ -33,13 +33,17 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
 }
-.carousel-caption img#profile_img{
-  width: 25%;
-  height: 50%;
+.carousel-caption img#profile_img{ /* Profile Picture */
+  display: inline;
+  margin: 0 auto;
+  /* margin-left: -25%; //centers the image */
+  height: 100%;
+  width: auto;
+  border-radius: 25%;
 }
 .carousel-caption h1 {
-  font-size: 500%;
-  text-transform: uppercase;
+  font-size: 400%;
+  /* text-transform: uppercase; */
   text-shadow: 1px 1px 15px #000;
 }
 .carousel-caption h3 {
@@ -52,6 +56,7 @@ html, body {
 .jumbotron {
   padding: 1rem;
   border-radius: 0;
+  text-align: center;
 }
 
 /*  Portfolio */
@@ -68,6 +73,17 @@ html, body {
   width: 95%;
   margin-top: .3rem;
   margin-top: 1rem;
+}
+.ucilogoimg {
+  width: 50%;
+  height: 50%;
+  display: block;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.schoolprojectimg {
+    padding-top: 10px;
 }
 
 
