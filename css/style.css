@@ -10,6 +10,10 @@ html, body {
 .navbar {
   padding: .8rem;
 }
+.navbar-brand img {
+  width: 40%;
+  height: 40%;
+}
 .navbar-nav li {
   padding-right: 20px;
 }
@@ -27,8 +31,8 @@ html, body {
   transform: translateY(-50%);
 }
 .carousel-caption img{
-  width: 100%;
-  height: 100%;
+  width: 50%;
+  height: 50%;
 }
 .carousel-caption h1 {
   font-size: 500%;
@@ -94,4 +98,30 @@ html, body {
 .fa-instagram:hover,
 .fa-youtube:hover {
   color: #d5d5d5;
+}
+
+/* Footer */
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
 }
