@@ -67,6 +67,7 @@ html, body {
   margin-top: 1rem;
 }
 
+
 /* Connect */
 .social a {
   font-size: 4.5em;
@@ -117,6 +118,17 @@ hr.light {
   margin-top: .8rem;
   margin-bottom: 1rem;
 }
+
+/* About */
+.dark{
+  padding:15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top:10px;
+  magin-bottom:10px;
+}
+
+
 
 /*---Media Queries --*/
 @media (max-width: 992px) {
