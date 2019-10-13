@@ -30,8 +30,8 @@ html, body {
   top: 50%;
   transform: translateY(-50%);
 }
-.carousel-caption img{
-  width: 50%;
+.carousel-caption img#profile_img{
+  width: 25%;
   height: 50%;
 }
 .carousel-caption h1 {
@@ -66,11 +66,7 @@ html, body {
   margin-top: .3rem;
   margin-top: 1rem;
 }
-#UCI_logo {
-  width: 75%;
-  height: 75%;
-  position: relative;
-}
+
 
 /* Connect */
 .social a {
@@ -121,6 +117,11 @@ hr.light {
   width: 100%;
   margin-top: .8rem;
   margin-bottom: 1rem;
+}
+
+/* Arrow To Top Button */
+.fa-arrow-to-top {
+  color: #6648b1;
 }
 
 /* Purple Buttons */
