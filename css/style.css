@@ -138,6 +138,11 @@ hr.light {
   margin-bottom: 1rem;
 }
 
+/* Resume */
+.embedResume {
+  margin-left: 50px;
+}
+
 /* Arrow To Top Button */
 .gotopbtn {
   position: fixed;
