@@ -59,7 +59,7 @@ Talking to classmates about class material, assignment requirements, etc. is a g
 
 3. How long, in hours, did it take you to complete this assignment?
 	The website itself took me about two full days to complete. However, in preparation to building the website, I had spent two days watching online tutorials to learn how to build a website from scratch. I used Youtube to learn how to implement certain features. I also used stack overflow and other sites for questions on minor implementations. Prior to writing the first line of code, I created a MockUp using powerpoint to be use as a guide/outline of the website.
-	The validation took a really long time to resolve. A lot of the examples I used did not pass validation.
+	The validation took a really long time to resolve. About half a day. A lot of the examples I used did not pass validation.
 	
 
 
