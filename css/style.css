@@ -9,6 +9,20 @@ html, body {
 
 }
 
+/* A clean fade-in effect for webpages  */
+/* https://www.abeautifulsite.net/a-clean-fade-in-effect-for-webpages */
+/* also see js code near <body> tag and see function in <script> tag in index.html*/
+
+body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+
+
 /* puts left and right padding on main sections */
 .container {
   padding-left: 40px;

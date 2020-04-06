@@ -43,10 +43,23 @@ WRITTEN BY: Roman Geluz
         return false;
       });
 
+      //A clean fade-in effect for webpages
+      //https://www.abeautifulsite.net/a-clean-fade-in-effect-for-webpages
+      //also see js code near <body> tag and also style.css 'body' selector
+      $(function() {
+          $('body').removeClass('fade-out');
+      });
+
     });
   </script>
 </head>
 <body>
+
+  <!-- A clean fade-in effect for webpages -->
+  <!-- https://www.abeautifulsite.net/a-clean-fade-in-effect-for-webpages -->
+  <!-- also see function in <script> tag above and style.css 'body' selector-->
+  <script>document.body.className += ' fade-out';</script>
+
   <!--
   <p>
     <a href="http://validator.w3.org/check?uri=referer">
