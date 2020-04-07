@@ -36,8 +36,8 @@ body.fade-out {
   opacity: 0.95; /*https://www.w3schools.com/cssref/css3_pr_opacity.asp & https://stackoverflow.com/questions/16392952/css-to-make-bootstrap-navbar-transparent*/
 }
 .navbar-brand img {
-  width: 10%;/*25%;*/
-  height: 10%;/*25%;*/
+  width: 25%;
+  height: 25%;
 }
 .navbar-nav li {
   padding-right: 20px;
