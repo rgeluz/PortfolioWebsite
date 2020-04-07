@@ -31,11 +31,13 @@ body.fade-out {
 
 /* Navigation */
 .navbar {
-  padding: .8rem;
+  padding: .1rem; /*.8rem;*/
+
+  opacity: 0.95; /*https://www.w3schools.com/cssref/css3_pr_opacity.asp & https://stackoverflow.com/questions/16392952/css-to-make-bootstrap-navbar-transparent*/
 }
 .navbar-brand img {
-  width: 25%;
-  height: 25%;
+  width: 20%;/*25%;*/
+  height: 20%;/*25%;*/
 }
 .navbar-nav li {
   padding-right: 20px;
@@ -43,6 +45,7 @@ body.fade-out {
 .nav-link {
   font-size: 1.1em !important;
 }
+
 /* Carousel */
 .carousel-inner img {
   width: 100%;
