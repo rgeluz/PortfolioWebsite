@@ -36,8 +36,8 @@ body.fade-out {
   opacity: 0.95; /*https://www.w3schools.com/cssref/css3_pr_opacity.asp & https://stackoverflow.com/questions/16392952/css-to-make-bootstrap-navbar-transparent*/
 }
 .navbar-brand img {
-  width: 20%;/*25%;*/
-  height: 20%;/*25%;*/
+  width: 10%;/*25%;*/
+  height: 10%;/*25%;*/
 }
 .navbar-nav li {
   padding-right: 20px;
@@ -163,7 +163,8 @@ body.fade-out {
 
 /* Footer */
 footer {
-  background-color: #3f3f3f;
+  /*background color is the same color as logo's background color*/
+  background-color: #004aad; /*#3f3f3f;*/
   color: #d5d5d5;
   padding-top: 2rem;
 }
@@ -198,13 +199,23 @@ hr.light {
 }
 
 /* Purple Buttons */
-.btn-primary {
+/*.btn-primary {
   background-color: #6648b1;
   border: 1px solid #6648b1;
 }
 .btn-primary:hover {
   background-color: #563d7c;
   border: 1px solid #563d7c;
+}*/
+
+/* Blue button */
+.btn-primary {
+  background-color: #004aad;
+  border: 1px solid #004aad;
+}
+.btn-primary:hover {
+  background-color: #697585;
+  border: 1px solid #697585;
 }
 
 /*---Media Queries --*/
