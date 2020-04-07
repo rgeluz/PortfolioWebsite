@@ -60,6 +60,19 @@ body.fade-out {
   height: 100%;
   width: auto;
   border-radius: 50%; /*https://www.webfx.com/blog/web-design/circular-images-css/*/
+
+  /*https://wpdatatables.com/css-image-hover-effects/*/
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.carousel-caption img#profile_img:hover{
+  /*opacity: 0.9;*/
+
+  /*https://wpdatatables.com/css-image-hover-effects/*/
+  -webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
 .carousel-caption h1 {
   font-size: 400%;
