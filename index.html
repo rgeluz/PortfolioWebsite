@@ -105,17 +105,24 @@ WRITTEN BY: Roman Geluz
   	</div>
   </nav>
 
+  
+
   <!-- Carousel -->
   <section>
     <div id="slides" class="carousel slide" data-ride="carousel">
     	<ul class="carousel-indicators">
     		<li data-target="#slides" data-slide-to="0" class="active"></li>
     		<li data-target="#slides" data-slide-to="1"></li>
-    		<li data-target="#slides" data-slide-to="2"></li>
+        <li data-target="#slides" data-slide-to="2"></li>
+        <li data-target="#slides" data-slide-to="3"></li>
     	</ul>
     	<div class="carousel-inner">
     		<div class="carousel-item active">
-    			<img class="background1" src="img/background1.jpg" style="filter: blur(2px); -webkit-filter: blur(2px);" alt="Software Code">
+          <!--Video Background-->
+          <video autoplay muted loop id="bgVideo" >
+            <source src="video/pp-home-bg.mp4" type="video/mp4">
+          </video>
+    			<!--<img class="background1" src="img/background1.jpg" style="filter: blur(2px); -webkit-filter: blur(2px);" alt="Software Code"> -->
     			<div class="carousel-caption">
             <a href="about.html" ><img id="profile_img" src="img/ProfilePic_squared.png" alt="Roman Geluz"></a>
     				<!-- <h1 class="display-2">Roman Geluz</h1>
@@ -123,6 +130,9 @@ WRITTEN BY: Roman Geluz
             <p class="h1" style="color: #ffffff;">Roman Geluz</p>
             <p class="h3" style="color: #ffffff;">Software Engineer</p>
     			</div>
+        </div>
+        <div class="carousel-item">
+    			<img src="img/background1.jpg" alt="Software Code">
     		</div>
     		<div class="carousel-item">
     			<img src="img/background2.jpg" alt="Laptop">
