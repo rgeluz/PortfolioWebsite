@@ -34,6 +34,7 @@ body.fade-out {
   padding: .1rem; /*.8rem;*/
 
   opacity: 0.95; /*https://www.w3schools.com/cssref/css3_pr_opacity.asp & https://stackoverflow.com/questions/16392952/css-to-make-bootstrap-navbar-transparent*/
+
 }
 .navbar-brand img {
   width: 25%;
@@ -43,7 +44,8 @@ body.fade-out {
   padding-right: 20px;
 }
 .nav-link {
-  font-size: 1.1em !important;
+  /*font-size: 1.1em !important;*/
+  font-size: 1em !important;
 }
 
 /* Project Images */
@@ -53,6 +55,12 @@ body.fade-out {
   box-shadow: 10px 10px 5px lightgrey;
 }
 
+/* Project Description */
+.projdescrip {
+  font-size: 15px;
+}
+
+
 /* Carousel */
 .carousel-inner img {
   width: 100%;
@@ -60,7 +68,7 @@ body.fade-out {
 }
 #bgVideo {
   width: 100%;
-  max-height: 1000px;
+  max-height: 1500px;
 }
 .carousel-caption {
   position: absolute;
