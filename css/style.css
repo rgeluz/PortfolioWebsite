@@ -46,6 +46,13 @@ body.fade-out {
   font-size: 1.1em !important;
 }
 
+/* Project Images */
+.projimage {
+  border-radius: 10px;
+  border: 10px solid lightsteelblue;
+  box-shadow: 10px 10px 5px lightgrey;
+}
+
 /* Carousel */
 .carousel-inner img {
   width: 100%;
