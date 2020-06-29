@@ -145,6 +145,10 @@ body.fade-out {
     padding-top: 10px;
 }
 
+/* List of Courses */
+.course-list {
+  font-size: 14px;
+}
 
 /* Connect */
 .social a {
