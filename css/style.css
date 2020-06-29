@@ -47,6 +47,10 @@ body.fade-out {
   /*font-size: 1.1em !important;*/
   font-size: 1em !important;
 }
+.nav-link:hover {
+  color: #004aad!important;
+  text-decoration: underline;
+}
 
 /* Project Images */
 .projimage {
