@@ -52,6 +52,11 @@ body.fade-out {
   text-decoration: underline;
 }
 
+/* Courses */
+.course-list ul{
+  font-size: 13px;
+}
+
 /* Project Images */
 .projimage {
   border-radius: 10px;
